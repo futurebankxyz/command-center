@@ -54,7 +54,7 @@ class TopUpControllerClass extends Component<Props, typeof defaultState> {
     />
 
     private readonly handleChange = (value: string): void => {
-        this.setState({ value });
+        this.setState({ value: value.toString() });
 
         const { accountBalance: traderBalance, resultMessage, disabled } = this.state;
         // If input is invalid, show an error.
